@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jejak Demokrasi | OnBoarding</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/src/style/global.css">
+    <link rel="stylesheet" href="/src/style/reading.css">
+    <link rel="icon" href="#" type="image/png">
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <main class="page">
+
+        <section class="hero">
+            <div class="hero__bg">
+                <img src="/src/assets/images/6da3c657ea8e5a18341f3d4c0ec3d083.jpg" alt="" loading="lazy" />
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="hero__content">
+                <h1 class="hero__title">Suara Rakyat, Sejarah Bangsa</h1>
+                <p class="hero__subtitle">
+                    Pelajari bagaimana demokrasi Indonesia tumbuh dan berubah dari masa ke masa.
+                </p>
+                <!-- <a class="btn btn--hero" href="#membaca">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm0 2v14h14V5H5zm2 2h10v2H7V7zm0 4h10v2H7v-2zm0 4h6v2H7v-2z" />
+                    </svg>
+                    Mari Memulai
+                </a> -->
+            </div>
+        </section>
+
+        <div class="stats__header">
+            <h1 class="stats__title">Materi Demokrasi</h1>
+            <p class="stats__hint">Berikut beberapa materi yang bisa anda baca</p>
+        </div>
+
+        <div class="search-filter" role="search">
+            <input type="search" class="search-input" id="searchInput" placeholder="Telusuri materi di sini..."
+                aria-label="Cari materi" autocomplete="off">
+            <button class="search-clear" id="searchClear" type="button" aria-label="Hapus pencarian" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <button class="search-btn" id="searchBtn" type="button" aria-label="Cari">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+        <p class="search-results__count" id="resultsCount" aria-live="polite"></p>
+
+        <section class="materials" aria-label="Daftar materi">
+            <div class="materials__grid" id="materialsGrid"></div>
+            <div class="materials__empty" id="materialsEmpty" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <p>Tidak ada materi yang cocok dengan pencarian Anda.</p>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/src/component/navbar.js"></script>
+    <script src="/src/component/footer.js"></script>
+    <script type="module" src="/src/js/reading.js"></script>
+
+</body>
+
+</html>
