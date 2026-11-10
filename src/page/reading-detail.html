@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jejak Demokrasi | Materi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style/exam.css">
+  <link rel="stylesheet" href="/src/style/global.css">
+  <link rel="stylesheet" href="/src/style/reading.css">
+</head>
+<body>
+
+  <nav id="navbar"></nav>
+
+  <div class="page-container page-container--narrow">
+    <div class="quiz-header-row">
+      <div>
+        <div class="quiz-label" id="materialLabel">MATERI</div>
+        <h1 class="quiz-title" id="materialTitle">Judul Materi</h1>
+      </div>
+    </div>
+    <p class="search-results__count" id="materialPeriod"></p>
+    <div class="question-card">
+      <div class="question-text" id="materialContent">...</div>
+    </div>
+    <div class="material-card__tags" id="materialTags"></div>
+    <div style="margin-top:24px;">
+      <button class="btn btn--primary" id="backBtn" type="button">Kembali ke Daftar Materi</button>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <script src="/src/component/footer.js"></script>
+  <script src="/src/component/navbar.js"></script>
+  <script src="/src/js/reading-data.js"></script>
+  <script src="/src/js/reading-storage.js"></script>
+  <script type="module" src="/src/js/reading-detail.js"></script>
+</body>
+</html>

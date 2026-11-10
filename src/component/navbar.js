@@ -14,7 +14,7 @@ const ICONS = {
 const NAV_LINKS = [
     { id: 'home', label: 'Home', icon: ICONS.home, href: '/index.html', active: true },
     { id: 'membaca', label: 'Membaca', icon: ICONS.book, href: '/src/page/reading.html', active: false },
-    { id: 'berlatih', label: 'Berlatih', icon: ICONS.graduate, href: '/src/page/exam.html', active: false }
+    { id: 'berlatih', label: 'Berlatih', icon: ICONS.graduate, href: '/src/page/quiz-select.html', active: false }
 ];
 
 function renderLinks() {

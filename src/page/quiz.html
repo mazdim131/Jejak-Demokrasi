@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jejak Demokrasi | Kuis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style/exam.css">
+  <link rel="stylesheet" href="/src/style/global.css">
+</head>
+<body>
+
+  <nav id="navbar"></nav>
+
+  <div class="page-container page-container--narrow">
+    <div class="quiz-header-row">
+      <div>
+        <div class="quiz-label" id="quizLabel">KUIS - UUD 1945 Masa Revolusi</div>
+        <h1 class="quiz-title" id="quizTitle">Soal 1 dari 5</h1>
+      </div>
+      <div class="quiz-timer" id="quizTimer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>00:00</span>
+      </div>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress-bar__fill" id="progressFill" style="width:20%"></div>
+    </div>
+
+    <div class="question-card">
+      <span class="indicator-badge" id="indicatorBadge">Indikator: ...</span>
+      <div class="question-text" id="questionText">...</div>
+    </div>
+
+    <div class="options" id="optionsContainer"></div>
+
+    <div class="quiz-footer">
+      <button class="prev-link" id="prevBtn" type="button">Soal sebelumnya</button>
+      <button class="next-btn" id="nextBtn" type="button">Lanjut</button>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <script src="/src/component/footer.js"></script>
+  <script src="/src/component/navbar.js"></script>
+  <script src="/src/js/quiz-data.js"></script>
+  <script src="/src/js/quiz-storage.js"></script>
+  <script type="module" src="/src/js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jejak Demokrasi | Pilih Kuis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/style/exam.css">
+  <link rel="stylesheet" href="/src/style/global.css">
+</head>
+
+<body>
+
+  <nav id="navbar"></nav>
+
+  <div class="page-container">
+    <h1
+      style="font-family:var(--font-heading);font-weight:800;font-size:28px;color:var(--color-text-heading);margin-bottom:8px;">
+      Pilih Kuis</h1>
+    <p style="font-family:var(--font-body);font-size:15px;color:var(--color-text-body);margin-bottom:28px;">Uji
+      pemahamanmu per periode, atau coba Kuis Final yang menggabungkan semua periode.</p>
+
+    <div id="quizCards" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;"></div>
+
+    <div class="banner">
+      <div>
+        <span class="banner__label">Tantangan Akhir</span>
+        <div class="banner__title">Kuis Final</div>
+        <div class="banner__desc">15 soal campuran dari semua periode - termasuk soal perbandingan</div>
+      </div>
+      <button class="banner__btn">Mulai Kuis Final</button>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <!-- js -->
+  <script src="/src/component/footer.js"></script>
+  <script src="/src/component/navbar.js"></script>
+  <script src="/src/js/quiz-data.js"></script>
+  <script src="/src/js/quiz-storage.js"></script>
+  <script src="/src/js/quiz-select.js"></script>
+</body>
+
+</html>

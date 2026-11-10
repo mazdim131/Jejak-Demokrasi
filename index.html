@@ -31,7 +31,7 @@
                 <p class="hero__subtitle">
                     Telusuri, bandingkan, dan uji pemahamanmu tentang pelaksanaan demokrasi di tiap periode konstitusi Indonesia.
                 </p>
-                <a class="btn btn--hero" href="#membaca">
+                <a class="btn btn--hero" href="/src/page/reading.html">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm0 2v14h14V5H5zm2 2h10v2H7V7zm0 4h10v2H7v-2zm0 4h6v2H7v-2z"/></svg>
                     Mari Memulai
                 </a>
@@ -49,22 +49,22 @@
                     <div class="stats__grid">
                         <article class="stat-card">
                             <div class="stat-card__label">QUIZ</div>
-                            <div class="stat-card__value">0</div>
+                            <div class="stat-card__value" id="statQuiz">0</div>
                             <div class="stat-card__caption">Telah di kerjakan</div>
                         </article>
                         <article class="stat-card">
                             <div class="stat-card__label">POINT</div>
-                            <div class="stat-card__value">0</div>
+                            <div class="stat-card__value" id="statPoint">0</div>
                             <div class="stat-card__caption">Telah di dapatkan</div>
                         </article>
                         <article class="stat-card">
                             <div class="stat-card__label">Materi</div>
-                            <div class="stat-card__value">0</div>
+                            <div class="stat-card__value" id="statRead">0</div>
                             <div class="stat-card__caption">Telah di baca</div>
                         </article>
                         <article class="stat-card">
                             <div class="stat-card__label">Materi</div>
-                            <div class="stat-card__value">0</div>
+                            <div class="stat-card__value" id="statUnread">0</div>
                             <div class="stat-card__caption">Belum di baca</div>
                         </article>
                     </div>
@@ -132,6 +132,9 @@
     </footer>
 
     <script src="/src/component/navbar.js"></script>
+    <script src="/src/js/quiz-storage.js"></script>
+    <script src="/src/js/reading-data.js"></script>
+    <script src="/src/js/reading-storage.js"></script>
     <script type="module" src="/src/js/index.js"></script>
     <script type="module" src="/src/component/footer.js"></script>
 
