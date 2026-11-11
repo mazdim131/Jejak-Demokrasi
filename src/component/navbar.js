@@ -48,7 +48,7 @@ navbarRoot.innerHTML = `
                     ${ICONS.menu}
                 </button>
 
-                <a class="navbar__profile" href="#profil" aria-label="Profil pengguna">
+                <a class="navbar__profile" href="/src/page/profile.html" aria-label="Profil pengguna">
                     ${ICONS.user}
                 </a>
             </div>

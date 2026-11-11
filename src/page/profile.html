@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jejak Demokrasi | Profil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/src/style/global.css">
+    <link rel="stylesheet" href="/src/style/profile.css">
+    <link rel="icon" href="#" type="image/png">
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <main class="page">
+        <section class="profile">
+            <div class="profile__container">
+
+                <!-- Header kartu profil -->
+                <header class="profile-card profile-card--hero">
+                    <div class="profile-card__avatar" id="profileAvatar">JD</div>
+                    <div class="profile-card__info">
+                        <h1 class="profile-card__name" id="profileName">Pengguna Jejak Demokrasi</h1>
+                        <p class="profile-card__subtitle">Pelajar Demokrasi Indonesia</p>
+                        <div class="profile-card__actions">
+                            <button class="btn btn--primary" id="editNameBtn" type="button">Ubah Nama</button>
+                            <button class="btn btn--ghost" id="resetProgressBtn" type="button">Reset Progres</button>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Statistik -->
+                <section class="profile-section">
+                    <div class="profile-section__header">
+                        <h2 class="profile-section__title">Statistik Anda</h2>
+                        <p class="profile-section__hint">Ringkasan progres belajar dan latihan Anda.</p>
+                    </div>
+                    <div class="stats__grid">
+                        <article class="stat-card">
+                            <div class="stat-card__label">QUIZ</div>
+                            <div class="stat-card__value" id="statQuiz">0</div>
+                            <div class="stat-card__caption">Telah dikerjakan</div>
+                        </article>
+                        <article class="stat-card">
+                            <div class="stat-card__label">POINT</div>
+                            <div class="stat-card__value" id="statPoint">0</div>
+                            <div class="stat-card__caption">Telah didapatkan</div>
+                        </article>
+                        <article class="stat-card">
+                            <div class="stat-card__label">Materi</div>
+                            <div class="stat-card__value" id="statRead">0</div>
+                            <div class="stat-card__caption">Telah dibaca</div>
+                        </article>
+                        <article class="stat-card">
+                            <div class="stat-card__label">Materi</div>
+                            <div class="stat-card__value" id="statUnread">0</div>
+                            <div class="stat-card__caption">Belum dibaca</div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Progres Kuis -->
+                <section class="profile-section">
+                    <div class="profile-section__header">
+                        <h2 class="profile-section__title">Progres Kuis</h2>
+                        <p class="profile-section__hint">Skor terbaik dan jumlah percobaan per periode.</p>
+                    </div>
+                    <div class="profile-list" id="quizProgressList"></div>
+                    <div class="profile-empty" id="quizProgressEmpty" hidden>
+                        <p>Belum ada kuis yang dikerjakan. <a href="/src/page/quiz-select.html">Mulai kuis</a></p>
+                    </div>
+                </section>
+
+                <!-- Progres Membaca -->
+                <section class="profile-section">
+                    <div class="profile-section__header">
+                        <h2 class="profile-section__title">Progres Membaca</h2>
+                        <p class="profile-section__hint">Materi yang sudah dan belum Anda baca.</p>
+                    </div>
+                    <div class="profile-list" id="readingProgressList"></div>
+                </section>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/src/component/navbar.js"></script>
+    <script src="/src/component/footer.js"></script>
+    <script src="/src/js/quiz-data.js"></script>
+    <script src="/src/js/quiz-storage.js"></script>
+    <script src="/src/js/reading-data.js"></script>
+    <script src="/src/js/reading-storage.js"></script>
+    <script type="module" src="/src/js/profile.js"></script>
+
+</body>
+
+</html>
