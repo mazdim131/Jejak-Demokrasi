@@ -1,8 +1,11 @@
-PENEMPATAN DATA MATERI ada pada folder
-<!-- src/js/quiz-data.js -->
+PENEMPATAN DATA quiz ada pada folder
+* src/js/quiz-data.js
 
 PENEMPATAN teks kesimpulan kuis final ada pada folder
-<!-- src/js/quiz.js -->
+* src/js/quiz.js 
+
+PENEMPATAN teks materi ada pada folder
+* src/js/reading-data.js
 
 
 JOBDESK pending
