@@ -48,6 +48,31 @@
     return score;
   }
 
+  function showFinalConclusion(score, total) {
+    const overlay = document.createElement('div');
+    overlay.style.cssText = 'position:fixed;inset:0;background:rgba(17,24,39,0.55);display:flex;align-items:center;justify-content:center;padding:1rem;z-index:9999;';
+    const card = document.createElement('div');
+    card.style.cssText = 'background:#fff;border-radius:16px;max-width:720px;width:100%;max-height:85vh;overflow:auto;padding:1.5rem 1.75rem;box-shadow:0 20px 60px rgba(0,0,0,0.25);font-family:var(--font-sans, "Plus Jakarta Sans", sans-serif);color:#1f2937;';
+
+    // text kesimpulan
+    card.innerHTML = `
+      <h2 style="margin:0 0 0.5rem;font-size:1.4rem;font-weight:800;color:#1f2937;">Kesimpulan Akhir</h2>
+      <p style="margin:0 0 1rem;color:#6b7280;font-size:0.95rem;">Skor Kuis Final kamu: <strong style="color:#6c9bcf;">${score} / ${total}</strong></p>
+      <p style="line-height:1.7;margin:0 0 0.75rem;">Perjalanan demokrasi Indonesia menunjukkan evolusi bentuk negara dan sistem pemerintahan dari masa ke masa. Pada UUD 1945 Masa Revolusi, Indonesia menganut sistem presidensial dengan kedaulatan rakyat. UUD RIS memperkenalkan bentuk federal dan sistem parlementer. UUDS 1950 mengembalikan Indonesia sebagai negara kesatuan dengan sistem parlementer dan pemilu demokratis. UUD NRI 1945 menghadirkan demokrasi terpimpin dengan kedaulatan MPR dan ideologi Pancasila. Setelah reformasi, UUD 1945 diamandemen untuk memperkuat pembagian kekuasaan, hak asasi manusia, dan pemilu langsung.</p>
+      <p style="line-height:1.7;margin:0 0 1.25rem;">Secara keseluruhan, demokrasi Indonesia terus berkembang menuju tata kelola yang lebih partisipatif, transparan, dan berkeadilan, dengan tetap berlandaskan Pancasila dan UUD 1945.</p>
+      <button id="conclusionClose" type="button" style="background:#6c9bcf;color:#fff;border:none;border-radius:10px;padding:0.7rem 1.4rem;font-weight:700;cursor:pointer;">Tutup</button>
+    `;
+    overlay.appendChild(card);
+    document.body.appendChild(overlay);
+    const closeBtn = card.querySelector('#conclusionClose');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function () {
+        overlay.remove();
+        window.location.href = '/src/page/quiz-select.html';
+      });
+    }
+  }
+
   function finishQuiz() {
     if (finished) return;
     finished = true;
@@ -60,6 +85,10 @@
         answers: selectedAnswers.slice(),
         attempt: true,
       });
+    }
+    if (periodId === 'final') {
+      showFinalConclusion(score, total);
+      return;
     }
     const msg = 'Kuis selesai! Skor kamu: ' + score + ' / ' + total;
     // eslint-disable-next-line no-alert

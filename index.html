@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="src/style/global.css">
     <link rel="stylesheet" href="src/style/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="icon" href="#" type="image/png">
 </head>
 
@@ -19,7 +20,7 @@
 
     <div id="navbar"></div>
 
-    <main class="page">
+    <main class="page container">
         <!-- Hero -->
         <section class="hero">
             <div class="hero__bg">
@@ -69,7 +70,7 @@
                         </article>
                     </div>
                     <div class="stats__image">
-                        <img src="https://placehold.co/366x451" alt="Ilustrasi" loading="lazy" />
+                        <img src="/src/assets/images/daefe302de852c6bc54e962870e29e17.jpg" alt="Ilustrasi" loading="lazy" />
                     </div>
                 </div>
             </div>
@@ -80,23 +81,23 @@
             <h2 class="tech__title">5+ Tech Stack Support</h2>
             <div class="tech__icons">
                 <div class="tech__item">
-                    <img src="https://placehold.co/62x61" alt="Bootstrap" />
+                    <img src="/src/assets/images/bootstrap.png" alt="Bootstrap" />
                     <span>Bootstrap</span>
                 </div>
                 <div class="tech__item">
-                    <img src="https://placehold.co/62x61" alt="JavaScript" />
-                    <span>JAVASCRIPT</span>
+                    <img src="/src/assets/images/js.png" alt="JavaScript" />
+                    <span>JavaScript</span>
                 </div>
                 <div class="tech__item">
-                    <img src="https://placehold.co/39x61" alt="CSS" />
+                    <img src="/src/assets/images/css.png" alt="CSS" />
                     <span>CSS</span>
                 </div>
                 <div class="tech__item">
-                    <img src="https://placehold.co/57x61" alt="Swiper.js" />
-                    <span>Swiper.JS</span>
+                    <img src="/src/assets/images/swiper.png" alt="Swiper.js" />
+                    <span>Swiper.js</span>
                 </div>
                 <div class="tech__item">
-                    <img src="https://placehold.co/40x61" alt="HTML" />
+                    <img src="/src/assets/images/html.png" alt="HTML" />
                     <span>HTML</span>
                 </div>
             </div>
@@ -123,13 +124,69 @@
                 </article>
             </div>
         </section>
+
+    <!-- Showcase / about cards (Swiper) -->
+    <section class="showcase">
+        <div class="showcase__header">
+            <h2 class="showcase__title">Tentang Jejak Demokrasi</h2>
+            <p class="showcase__subtitle">
+                Platform interaktif untuk memahami perjalanan demokrasi Indonesia secara menyeluruh.
+            </p>
+        </div>
+        <div class="swiper showcase__swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <article class="showcase-card">
+                        <div class="showcase-card__icon showcase-card__icon--blue">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3 1.5 8.25 12 13.5l9-4.5V15a.75.75 0 0 0 1.5 0V8.25L12 3Z"/></svg>
+                        </div>
+                        <h3 class="showcase-card__title">Belajar Interaktif</h3>
+                        <p class="showcase-card__desc">Materi disajikan ringkas dan mudah dipahami, dilengkapi contoh dari tiap periode konstitusi.</p>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="showcase-card">
+                        <div class="showcase-card__icon showcase-card__icon--orange">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 3h18v4H3V3zm0 6h18v4H3V9zm0 6h18v4H3v-4z"/></svg>
+                        </div>
+                        <h3 class="showcase-card__title">Bandingkan Periode</h3>
+                        <p class="showcase-card__desc">Analisis 5 indikator demokrasi di setiap era untuk melihat perubahan dari masa ke masa.</p>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="showcase-card">
+                        <div class="showcase-card__icon showcase-card__icon--purple">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <h3 class="showcase-card__title">Kuis & Skor</h3>
+                        <p class="showcase-card__desc">Uji pemahamanmu dengan 20+ soal interaktif dan pantau progres belajarmu.</p>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="showcase-card">
+                        <div class="showcase-card__icon showcase-card__icon--blue">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 13h2v8H3v-8zm6-6h2v14H9V7zm6 3h2v11h-2V10zm6-7h2v18h-2V3z"/></svg>
+                        </div>
+                        <h3 class="showcase-card__title">Progres Belajar</h3>
+                        <p class="showcase-card__desc">Statistik pribadi menampilkan materi yang sudah dan belum dibaca serta skor kuis.</p>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="showcase-card">
+                        <div class="showcase-card__icon showcase-card__icon--orange">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"/></svg>
+                        </div>
+                        <h3 class="showcase-card__title">Responsif</h3>
+                        <p class="showcase-card__desc">Tampilan nyaman di berbagai perangkat, dari desktop hingga ponsel.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="site-footer__inner">
-            <span>&copy; 2026 Kelompok5. All rights reserved.</span>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
     <script src="/src/component/navbar.js"></script>
     <script src="/src/js/quiz-storage.js"></script>
@@ -137,6 +194,24 @@
     <script src="/src/js/reading-storage.js"></script>
     <script type="module" src="/src/js/index.js"></script>
     <script type="module" src="/src/component/footer.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof Swiper === 'undefined') return;
+            new Swiper('.showcase__swiper', {
+                slidesPerView: 1,
+                spaceBetween: 16,
+                loop: true,
+                autoplay: { delay: 3500, disableOnInteraction: false },
+                pagination: { el: '.swiper-pagination', clickable: true },
+                breakpoints: {
+                    640: { slidesPerView: 2 },
+                    992: { slidesPerView: 3 }
+                }
+            });
+        });
+    </script>
 
 </body>
 
