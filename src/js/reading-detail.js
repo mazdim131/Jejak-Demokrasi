@@ -20,7 +20,11 @@
     if (label) label.textContent = 'MATERI - ' + (material.period || '');
     if (title) title.textContent = material.title || '';
     if (period) period.textContent = material.period || '';
-    if (content) content.textContent = material.content || material.desc || '';
+    if (content) 
+      {
+        content.innerHTML = (material.content ? '<p style="margin-bottom: 16px; font-weight: bold;">' + material.content + '</p>' : '') + 
+        '<div style="white-space: pre-line; line-height: 1.8; font-weight: normal; font-size: 0.9rem;">' + (material.details || material.desc || '') + '</div>';
+      }
     if (tags) {
       tags.innerHTML = (material.tags || []).map(function (t) {
         return '<span class="tag">' + t + '</span>';
